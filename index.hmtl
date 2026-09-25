@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Michael Jordan</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,sans-serif;color:#222;background:white}
+header{background:#111;color:white;text-align:center;padding:50px;border-bottom:5px solid #d71920}
+header h1{font-size:50px;margin:0}
+header p{font-size:20px}
+nav{background:#d71920;text-align:center;padding:15px;position:sticky;top:0;z-index:10}
+nav a{color:white;text-decoration:none;margin:15px;font-weight:bold}
+nav a:hover{text-decoration:underline}
+.inicio{display:flex;justify-content:space-around;align-items:center;padding:60px 10%;background:#f2f2f2}
+.inicio-texto{width:50%}
+.inicio h2{font-size:45px;color:#d71920}
+.inicio p{font-size:18px;line-height:1.6}
+.inicio img{width:350px;height:400px;object-fit:cover;border-radius:10px}
+.boton{display:inline-block;background:#d71920;color:white;padding:12px 25px;text-decoration:none;border-radius:5px}
+.boton:hover{background:#111}
+section{padding:60px 10%}
+section h2{text-align:center;color:#d71920;font-size:35px;margin-bottom:30px}
+section p{line-height:1.7;font-size:17px}
+.gris{background:#f2f2f2}
+.tarjetas{display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
+.tarjeta{background:white;width:220px;padding:25px;text-align:center;border-radius:10px;box-shadow:0 3px 10px #aaa}
+.tarjeta h3{color:#d71920;font-size:35px;margin:10px}
+table{width:80%;margin:auto;border-collapse:collapse}
+th{background:#111;color:white}
+th,td{padding:15px;text-align:center;border:1px solid #ccc}
+tr:nth-child(even){background:#f2f2f2}
+.air-jordan{display:flex;justify-content:space-around;align-items:center;gap:40px}
+.air-jordan-texto{width:55%}
+.air-jordan img{width:300px;border-radius:10px}
+.curiosidades{max-width:800px;margin:auto;line-height:2;font-size:18px}
+footer{background:#111;color:white;text-align:center;padding:30px}
+@media(max-width:700px){
+header h1{font-size:35px}
+nav a{display:block;margin:10px}
+.inicio{flex-direction:column;text-align:center}
+.inicio-texto{width:100%}
+.inicio img{margin-top:30px;width:280px;height:330px}
+.air-jordan{flex-direction:column}
+.air-jordan-texto{width:100%}
+table{width:100%}
+}
+</style>
+</head>
+<body>
+<header>
+<h1>MICHAEL JORDAN</h1>
+<p>La leyenda del baloncesto</p>
+</header>
+
+<nav>
+<a href="#inicio">Inicio</a>
+<a href="#biografia">Biografía</a>
+<a href="#palmares">Palmarés</a>
+<a href="#estadisticas">Estadísticas</a>
+<a href="#air-jordan">Air Jordan</a>
+</nav>
+
+<div class="inicio" id="inicio">
+<div class="inicio-texto">
+<h2>Michael Jordan</h2>
+<p>Michael Jordan es uno de los jugadores de baloncesto más conocidos de la historia. Destacó especialmente durante su etapa en los Chicago Bulls de la NBA.</p>
+<a href="#biografia" class="boton">Conocer más</a>
+</div>
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Michael_Jordan_in_2014.jpg" alt="Michael Jordan">
+</div>
+
+<section id="biografia">
+<h2>Biografía</h2>
+<p>Michael Jeffrey Jordan nació el 17 de febrero de 1963 en Brooklyn, Nueva York, Estados Unidos.</p>
+<p>Creció en Wilmington, Carolina del Norte, donde comenzó a desarrollar su pasión por el baloncesto.</p>
+<p>En 1984 fue seleccionado por los Chicago Bulls en el Draft de la NBA. Durante su carrera se convirtió en una de las grandes estrellas de la competición.</p>
+<p>Jordan ganó seis campeonatos de la NBA con los Chicago Bulls y consiguió dos tripletes de campeonatos durante los años 90.</p>
+</section>
+
+<section id="palmares" class="gris">
+<h2>Palmarés</h2>
+<div class="tarjetas">
+<div class="tarjeta"><h3>6</h3><p>Campeonatos de la NBA</p></div>
+<div class="tarjeta"><h3>6</h3><p>MVP de las Finales</p></div>
+<div class="tarjeta"><h3>5</h3><p>MVP de la temporada</p></div>
+<div class="tarjeta"><h3>14</h3><p>Selecciones All-Star</p></div>
+</div>
+</section>
+
+<section id="estadisticas">
+<h2>Estadísticas</h2>
+<table>
+<tr><th>Dato</th><th>Marca</th></tr>
+<tr><td>Partidos</td><td>1.072</td></tr>
+<tr><td>Puntos por partido</td><td>30,1</td></tr>
+<tr><td>Rebotes por partido</td><td>6,2</td></tr>
+<tr><td>Asistencias por partido</td><td>5,3</td></tr>
+<tr><td>Campeonatos NBA</td><td>6</td></tr>
+</table>
+</section>
+
+<section id="air-jordan" class="gris">
+<h2>Air Jordan</h2>
+<div class="air-jordan">
+<div class="air-jordan-texto">
+<h3>La marca Air Jordan</h3>
+<p>La marca Air Jordan nació gracias a la colaboración entre Michael Jordan y Nike.</p>
+<p>Las primeras Air Jordan aparecieron en 1985 y tuvieron una gran influencia tanto en el baloncesto como en la cultura deportiva.</p>
+<p>Con el paso de los años se crearon numerosas versiones de las zapatillas y otros productos relacionados con la marca.</p>
+</div>
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Air_Jordan_1_Retro_High_OG.jpg" alt="Zapatillas Air Jordan">
+</div>
+</section>
+
+<section>
+<h2>Curiosidades</h2>
+<ul class="curiosidades">
+<li>Michael Jordan utilizó el número 23 durante gran parte de su carrera.</li>
+<li>Ganó dos medallas de oro olímpicas con Estados Unidos.</li>
+<li>Fue elegido para el Salón de la Fama del Baloncesto.</li>
+<li>Jugó para los Chicago Bulls y los Washington Wizards.</li>
+<li>También tuvo una breve carrera profesional en el béisbol.</li>
+</ul>
+</section>
+
+<footer>
+<p>Web dedicada a Michael Jordan</p>
+<p>Proyecto HTML y CSS - 2º ASIR</p>
+</footer>
+</body>
+</html>
